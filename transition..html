@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        body {
+            height: 570px;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 4px solid peru;
+            background-color: blanchedalmond;
+            transition: width 2s linear, height 2s linear, transform 2s linear;
+        }
+
+        .box:hover {
+            transform: rotate(2000deg);
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>this is transition</h1>
+    </div>
+    <div class="box">
+        <h1>this is transition</h1>
+    </div>
+    <div class="box">
+        <h1>this is transition</h1>
+    </div>
+</body>
+
+</html>

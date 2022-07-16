@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown list</title>
+    <style>
+        .dropbutton {
+            color: white;
+            border: 0px;
+            padding: 10px 16px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: rgb(46, 119, 31);
+            cursor: pointer;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropcontent {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+
+
+        }
+
+        .dropcontent a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 10px 16px;
+            z-index: 1;
+            min-width: 160px;
+        }
+
+        .dropcontent a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropcontent {
+            display: block;
+        }
+
+        .dropbutton:hover {
+            background-color: rgb(40, 223, 3);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lets make a Dropdown list</h1>
+    <div class="dropdown">
+        <button class="dropbutton">kholik hiyar</button>
+        <div class="dropcontent">
+            <a href="#">link1</a>
+            <a href="#">link2</a>
+            <a href="#">link3</a>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, id optio aperiam odit fugiat expedita
+            enim deserunt quas sunt iure tempora beatae laboriosam dignissimos inventore saepe commodi eaque illum
+            deleniti!</p>
+    </div>
+</body>
+
+</html>
